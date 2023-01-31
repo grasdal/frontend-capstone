@@ -1,50 +1,66 @@
-header {
+/* CSS Color theme */
+:root {
+  --color-primary-1: #495E57;
+  --color-primary-2: #c3a510;
+  --color-secondary-1: #EE9972;
+  --color-secondary-2: #FBDABC;
+  --color-highlight-1: #EDEFEE;
+  --color-highlight-2: #333333;
+  --color-nav-link: var(--color-highlight-2);
+  --color-nav-link-active: var(--color-primary-1);
+  --color-button-bg: #F4CE14;
+  --color-button-fg: var(--color-highlight-2);
+
+  --margin: 1rem;
+  --padding: 1rem;
+  --border-radius: 16px;
+  --page-width: 960px;
+}
+
+/* fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Markazi Text';
+}
+p {
+  font-family: 'karla';
+}
+
+/* form fields */
+input[type=button] {
+  background: var(--color-button-bg);
+  color: var(--color-button-fg);
+  font-weight: bold;
+  padding: calc( var(--padding) / 2) var(--padding);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+img {
+  border-radius: var(--border-radius);
+}
+
+
+/* layout */
+.app {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: lightgray;
+  flex-direction: column;
+  font: markazi-text
 }
 
-header a {
-  display: flex;
-  align-items: center;
-}
 
-header nav {
-  display: flex;
-  justify-content: center;
-}
-
-header nav ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-header nav li {
-  margin: 0 1rem;
-}
-
-main {
-  padding: 1rem;
-}
-
-.hero {
-  background-color: lightblue;
-  padding: 1rem;
-}
-
-.specials {
-  background-color: lightyellow;
-  padding: 1rem;
-}
 
 footer {
+  grid-area: footer;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  background-color: lightgray;
+  margin-top: var(--margin);
+  padding: var(--padding);
+}
+
+footer p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
 }

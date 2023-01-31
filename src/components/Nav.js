@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Nav = () => {
+function Nav() {
   return (
-    <nav>
+    <nav className="Nav">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -13,6 +13,6 @@ const Nav = () => {
       </ul>
     </nav>
   );
-};
+}
 
 export default Nav;

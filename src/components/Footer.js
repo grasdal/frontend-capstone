@@ -1,15 +1,16 @@
-// components/Footer.js
 import React from 'react';
 import logo from '../images/logo-footer.png';
 import './Footer.css';
 
-const Footer = () => {
+function Footer() {
   return (
     <footer>
-      <img src={logo} alt="Little Lemon" className="Footer-logo" />
-      <p>&copy; Little Lemon</p>
+      <p>
+        Copyright
+        <img src={logo} alt="Little Lemon" />
+      </p>
     </footer>
   );
-};
+}
 
 export default Footer;

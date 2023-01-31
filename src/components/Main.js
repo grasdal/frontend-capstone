@@ -1,16 +1,16 @@
 import React from 'react';
+import Hero from './Hero';
+import './Main.css';
 
-const Main = () => {
+function Main() {
   return (
-    <main>
-      <section className="hero">
-        <h2>Welcome to Little Lemon</h2>
-      </section>
-      <section className="specials">
-        <h2>This week's specials!</h2>
+    <main className="main">
+      <Hero />
+      <section className="content">
+        <h1>This week's specials!</h1>
       </section>
     </main>
   );
-};
+}
 
 export default Main;

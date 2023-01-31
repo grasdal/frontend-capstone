@@ -1,16 +1,15 @@
 import React from 'react';
-import Nav from './Nav';
 import logo from '../images/logo.svg';
+import Nav from './Nav';
+import './Header.css';
 
-const Header = () => {
+function Header() {
   return (
-    <header>
-      <a href="#">
-        <img src={logo} alt="Little Lemon" />
-      </a>
+    <header className="Header">
+      <img src={logo} alt="Little Lemon" />
       <Nav />
     </header>
   );
-};
+}
 
 export default Header;
