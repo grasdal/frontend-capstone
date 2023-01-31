@@ -1,6 +1,5 @@
 import React from 'react';
 import './Hero.css';
-import image from '../images/restauranfood.jpg';
 
 function Hero() {
   return (
