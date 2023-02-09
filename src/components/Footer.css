@@ -1,3 +1,15 @@
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--margin);
+  padding: var(--padding);
+}
+
+footer p {
+  margin: 0;
+}
+
 footer img {
   max-width: 100px;
   position: relative;

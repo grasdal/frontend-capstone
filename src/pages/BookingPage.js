@@ -1,11 +1,13 @@
 import React from 'react';
+import BookingForm from '../components/BookingForm';
 import './BookingPage.css';
 
-function BookingPage() {
+function BookingPage({onSelectDate, availableTimes, onSubmitForm}) {
   return (
-    <>
-      <h1>BookingPage</h1>
-    </>
+    <section className="content">
+      <h1>Book Now</h1>
+      <BookingForm availableTimes={availableTimes} onSelectDate={onSelectDate} onSubmitForm={onSubmitForm} />
+    </section>
   );
 }
 
