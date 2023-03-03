@@ -1,0 +1,25 @@
+.testimonials .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--margin);
+}
+
+.testimonial {
+    background-color: var(--color-highlight-1);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    text-align: center;
+}
+.testimonial .rating img {
+    width: 2rem;
+}
+
+@media (max-width: 767px) {
+    .testimonials {
+        padding: var(--padding);
+    }
+    .testimonials .list {
+        grid-row: auto;
+        grid-template-columns: 100%;
+    }
+}

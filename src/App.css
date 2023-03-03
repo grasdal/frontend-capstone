@@ -25,18 +25,33 @@ p {
   font-family: 'karla';
 }
 
-/* form fields */
-input[type=button] {
-  background: var(--color-button-bg);
-  color: var(--color-button-fg);
-  font-weight: bold;
-  padding: calc( var(--padding) / 2) var(--padding);
-  border-radius: var(--border-radius);
-  cursor: pointer;
-}
-
+/* images and button styles */
 img {
   border-radius: var(--border-radius);
+}
+
+.button,
+.button-secondary {
+  display: inline-block;
+  font-weight: bold;
+  padding: calc( var(--padding) / 2) calc(var(--padding) * 2);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  margin-bottom: 1rem;
+}
+.button {
+  background: var(--color-button-bg);
+  color: var(--color-button-fg);
+}
+.button-secondary {
+  background: var(--color-primary-1);
+  color: var(--color-highlight-1);
+}
+td .button,
+td .button-secondary {
+    margin-bottom: 0;
 }
 
 

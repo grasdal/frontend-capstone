@@ -7,10 +7,10 @@ test('renders Little Lemon headline', () => {
   expect(header).toBeInTheDocument();
 });
 
-test('renders Chicago headline', () => {
+test('renders intro headline', () => {
   render(<App />);
-  const chicago = screen.getByText(/Chicago/i);
-   expect(chicago).toBeInTheDocument();
+  const intro = screen.getByText(/We are a family owned Mediterranen restaurant, focused on traditional receipes served with a modern twist/i);
+  expect(intro).toBeInTheDocument();
 });
 
 test('renders navigation', () => {

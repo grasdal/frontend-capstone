@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+    text-align: center;
+}
+th {
+    border-bottom: 1px solid grey;
+}
+
+@media (max-width: 767px) {
+    .reservations {
+        font-size: 0.70rem;
+    }
+    .button-secondary {
+        padding: calc(var(--padding) / 2);
+    }
+    form {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .button {
+        grid-column: span 2;
+    }
+}

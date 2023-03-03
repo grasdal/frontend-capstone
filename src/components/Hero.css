@@ -3,6 +3,7 @@
     background: var(--color-primary-1);
     color: var(--color-highlight-1);
     padding: calc(var(--padding) * 2) 0;
+    margin-bottom: 8rem;
 }
 .hero .content {
     display: grid;
@@ -40,4 +41,22 @@
     background-position: 100%;
     background-blend-mode: multiply;
     border-radius: var(--border-radius);
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 0;
+        margin-bottom: calc(var(--margin) * 2);
+    }
+    .hero .content {
+        grid-row: auto;
+        grid-template-columns: 100%;
+        padding: var(--padding);
+    }
+    .hero .promo {
+        width: 100%;
+    }
+    .hero .image {
+        display: none;
+    }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 function Hero() {
@@ -9,7 +10,7 @@ function Hero() {
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>We are a family owned Mediterranen restaurant, focused on traditional receipes served with a modern twist</p>
-                <input type='button' value='Reseve a Table' />
+                <Link to={'/booking'} className='button'>Reserve a Table</Link>
             </div>
             <div className='image' />
         </div>
